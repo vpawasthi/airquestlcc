@@ -8,7 +8,7 @@ function locatorFunction() {
         selectList = selector;
         selectList.click();
     
-        selectList.all(protractor.By.tagName('option'))
+        selectList.all(protractor.By.tagName('mat-select'))
             .then(function findMatchingOption(options){
                 options.some(function(option){
                     option.getText().then(function doesOptionMatch(text){
@@ -29,7 +29,7 @@ function locatorFunction() {
     //**************************************************************************************************
     this.fnSelectDropdownbyNum = function selectoptionindex ( element, optionNum ) {
       if (optionNum){
-        var options = element.all(by.tagName('option'))   
+        var options = element.all(by.tagName('mat-select'))   
           .then(function(options){
             options[optionNum].click();
           });
