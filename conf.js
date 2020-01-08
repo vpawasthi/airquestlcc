@@ -21,7 +21,7 @@ exports.config = {
 
     framework: 'jasmine2',
 
-    specs: ['./Specs/loginSpec2.js'],
+    specs: ['./Specs/orderSpec.js'],
   //  specs: ['./Specs/adminspec.js'],
     //specs: ['./Specs/customerspec.js','./Specs/adminspec.js'],
   //  specs: ['admin.js'],
